@@ -33,7 +33,7 @@ int helper(int *array, int value, int lo, int hi)
 
 int binary_search(int *array, size_t size, int value)
 {
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 	return (helper(array, value, 0, size - 1));
 }
