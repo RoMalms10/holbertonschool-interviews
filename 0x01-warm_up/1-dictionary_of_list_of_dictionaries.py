@@ -2,11 +2,8 @@
 ''' This module is used for getting information from an API '''
 import json
 import requests
-from sys import argv
 
 if __name__ == "__main__":
-    count = 0
-    true_list = []
     json_dict = {}
     response1 = requests.get(
         'https://jsonplaceholder.typicode.com/users')
